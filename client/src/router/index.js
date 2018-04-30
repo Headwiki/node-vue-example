@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
-import Posts from '@/components/Posts'
-import NewPost from '@/components/NewPost'
-import EditPost from '@/components/EditPost'
+import Tasks from '@/components/Tasks'
+import NewTask from '@/components/NewTask'
+import EditTask from '@/components/EditTask'
 
 Vue.use(Router)
 
@@ -16,19 +16,19 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/posts',
-      name: 'Posts',
-      component: Posts
+      path: '/tasks',
+      name: 'Tasks',
+      component: Tasks
     },
     {
-      path: '/posts/new',
-      name: 'NewPost',
-      component: NewPost
+      path: '/tasks/new',
+      name: 'NewTask',
+      component: NewTask
     },
     {
-      path: '/posts/:id',
-      name: 'EditPost',
-      component: EditPost
+      path: '/tasks/:id',
+      name: 'EditTask',
+      component: EditTask
     }
   ]
 })
